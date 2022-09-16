@@ -1,0 +1,14 @@
+{% extends "payment/base.html" %}
+
+{% block content %}
+  <ul>
+    <hr>
+  {% for item in items %}
+    <h2>{{ item.name }}</h2>
+    <li>description - {{ item.description }}</li>
+    <li>price - {{item.get_price_show}} {{item.currency}}</li>
+    <a style="background-color: #008CBA" href="{{ item.get_absolute_url }}">Buy Me!</a>
+    <hr>
+  {% endfor %}
+  </ul>
+{% endblock content %}
