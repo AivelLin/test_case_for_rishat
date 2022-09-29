@@ -24,7 +24,6 @@ cd test_case_for_rishat/
 
 ***
 Подготовка перед запуском
------------
 ***
 Запустить docker-compose:
 
