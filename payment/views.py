@@ -6,6 +6,7 @@ from djsite.settings import STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY
 
 stripe.api_key = STRIPE_SECRET_KEY
 
+
 def index(request):
     return redirect(items)
 
